@@ -30,10 +30,10 @@ class ExperienceTableViewController: UITableViewController
         
         for i in 0..<3
         {
-            let works = Work(imageName: "\(Int.random(in: 1...10))", title: "Job \(i+1)", dates: "201\((i)%10) - 201\((i+1)%10)")
+            let works = Work(imageName: "\(i+1)", title: "Job \(i+1)", dates: "201\((i)%10) - 201\((i+1)%10)")
             work.append(works)
         }
-        let educations = Work(imageName: "\(Int.random(in: 1...10))", title: "Education", dates: "2018 - Current")
+        let educations = Work(imageName: "\(4)", title: "Education", dates: "2018 - Current")
         education.append(educations)
         experiences.append(work)
         experiences.append(education)
@@ -62,7 +62,7 @@ extension ExperienceTableViewController
         if let cell = ExperienceTableView.dequeueReusableCell(withIdentifier: "ExperienceCell", for: indexPath) as? ExperienceTableViewCell
         {
             let experience = experiences[indexPath.section][indexPath.row]
-            cell.coverImageView.image = UIImage(systemName: "hare.fill")
+            cell.coverImageView.image = UIImage(named: experience.imageName)
             cell.titleLabel.text = experience.title
             cell.dateLabel.text = experience.dates
             
@@ -94,6 +94,7 @@ extension ExperienceTableViewController
             {
                 let controller = segue.destination as! DetailExperienceController
                 let experience = experiences[indexPath.section][indexPath.row]
+                controller.imageDetail = UIImage(named: experience.imageName)
                 controller.titleDetail = experience.title
                 controller.datesDetail = experience.dates
             }

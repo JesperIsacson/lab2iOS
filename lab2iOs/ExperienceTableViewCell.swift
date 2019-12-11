@@ -11,6 +11,7 @@ import UIKit
 class ExperienceTableViewCell: UITableViewCell
 {
     @IBOutlet weak var coverImageView: UIImageView!
+    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     

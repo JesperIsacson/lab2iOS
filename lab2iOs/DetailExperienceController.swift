@@ -17,7 +17,7 @@ class DetailExperienceController: UIViewController
     
     var titleDetail: String = ""
     var datesDetail: String = ""
-    var imageDetail = UIImage(systemName: "hare.fill")
+    var imageDetail: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()

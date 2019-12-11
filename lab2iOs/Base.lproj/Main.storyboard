@@ -222,7 +222,7 @@ Esto hay que tomarlo sin ningún apuro</string>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="coverImageView" destination="jzb-rh-vEG" id="jz9-7b-HTB"/>
+                                    <outlet property="coverImageView" destination="jzb-rh-vEG" id="fym-tV-Tfd"/>
                                     <outlet property="dateLabel" destination="X1v-DP-HIV" id="oBV-cf-wec"/>
                                     <outlet property="titleLabel" destination="QO0-dH-av0" id="pk8-Yb-qJE"/>
                                 </connections>
@@ -272,7 +272,7 @@ Esto hay que tomarlo sin ningún apuro</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="Lap-2Z-UZ5"/>
                                 </constraints>
-                                <mutableString key="text">You used to call me on my, you used to, you used to
+                                <string key="text">You used to call me on my, you used to, you used to
 You used to call me on my cell phone
 Late night when you need my love
 Call me on my cell phone
@@ -288,7 +288,7 @@ Girl you got me down, you got me stressed out
 'Cause ever since I left the city, you
 Started wearing less and goin' out more
 Glasses of champagne out on the dance floor
-Hangin' with some girls I've never seen before</mutableString>
+Hangin' with some girls I've never seen before</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
